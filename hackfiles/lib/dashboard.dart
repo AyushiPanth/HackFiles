@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'main.dart';
+
 class Dashboard extends StatefulWidget {
   @override
   _DashboardState createState() => _DashboardState();
@@ -13,7 +15,12 @@ class _DashboardState extends State<Dashboard> {
           title: Text("HackFiles"),
           backgroundColor: Color(0xffE0115F),
           leading: GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => MY()),
+              );
+            },
             child: Icon(
               Icons.account_circle_outlined,
               size: 40,
@@ -42,7 +49,7 @@ class _DashboardState extends State<Dashboard> {
                   child: Container(
                     width: MediaQuery.of(context).size.width / 1.5,
                     child: Text(
-                      "One app",
+                      "One app,",
                       style: TextStyle(
                           fontSize: 28.0, fontWeight: FontWeight.w300),
                     ),

@@ -4,7 +4,7 @@ import 'package:hackfiles/dashboard.dart';
 import 'package:hackfiles/profile_ui.dart';
 import 'package:hackfiles/welcomepage.dart';
 
-void main() => runApp(MY());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: ProfileScreen(),
+      home: WelcomePage(),
     );
   }
 }
