@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackfiles/dashboard.dart';
 import 'package:hackfiles/signup.dart';
 
 import 'login.dart';
@@ -107,7 +108,12 @@ class _WelcomePageState extends State<WelcomePage> {
           Padding(
               padding: EdgeInsets.only(right: 20.0),
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Dashboard()),
+                  );
+                },
                 child: Icon(
                   Icons.dashboard,
                   size: 30.0,
